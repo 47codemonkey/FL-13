@@ -19,7 +19,7 @@ body {
 .landing-logo p,
 .footer_logo p {
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
   flex-direction: column;
   margin-left: 0.625rem;
@@ -35,7 +35,7 @@ body {
 .header .header-wrap .header_heading {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 3.75rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 3.75rem;
   position: relative;
   width: 50%;
@@ -81,7 +81,7 @@ body {
 
 .header .header-wrap div:last-child .header_button {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   padding: 0.625rem 2.5rem;
   cursor: pointer;
   color: rgb(255, 255, 255);
@@ -105,7 +105,7 @@ body {
 .section .section_text {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 700;
   position: relative;
   padding: 3.125rem 0;
   text-align: center;
@@ -185,7 +185,7 @@ body {
 .section .section_banner .section_banner_heading {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5625rem;
-  font-weight: bold;
+  font-weight: 700;
   position: relative;
   margin-bottom: 0.625rem;
   color: rgb(255, 255, 255);
@@ -193,7 +193,7 @@ body {
 
 .section .section_banner .section_banner_button {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   padding: 0.625rem 2.5rem;
   cursor: pointer;
   color: rgb(255, 255, 255);

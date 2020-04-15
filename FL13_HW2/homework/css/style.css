@@ -55,7 +55,7 @@
 }
 
 h2 {
-    font-weight: 18.75rem;
+    font-weight: 300;
 }
 
 .box.box-bg:hover {
@@ -86,7 +86,7 @@ h2 {
 
 .heading li a:hover {
     color: rgb(255, 0, 0);
-    font-weight: 43.75rem;
+    font-weight: 700;
 }
 
 .heading li a:hover:before {
@@ -128,7 +128,7 @@ section.blocks .box p:first-letter {
 }
 
 .box.box-work p:first-letter {
-    font-weight: 43.75rem;
+    font-weight: 700;
 }
 
 .carousel-content p {
@@ -262,7 +262,7 @@ button.btn.btn-primary.submit-btn:hover {
 
     h2 {
         color: rgb(135, 206, 250) !important;
-        font-weight: 18.75rem;
+        font-weight: 300;
     }
 
     .tm-banner-inner {

@@ -88,7 +88,7 @@ h2 {
 
 .heading li a:hover {
     color: rgb(255, 0, 0);
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .heading li a:hover:before {
@@ -130,7 +130,7 @@ section.blocks .box p:first-letter {
 }
 
 .box.box-work p:first-letter {
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .carousel-content p {

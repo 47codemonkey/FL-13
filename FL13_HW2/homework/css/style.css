@@ -24,11 +24,11 @@
 
 @keyframes rotate {
     from {
-        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
     }
 
     to {
-        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 }
 

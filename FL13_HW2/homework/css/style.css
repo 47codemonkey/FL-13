@@ -1,3 +1,5 @@
+@media screen {
+
 .tm-team-description-container p {
     font-style: italic;
 }
@@ -189,6 +191,8 @@ button.btn.btn-primary.submit-btn:hover {
     background-color: rgb(173, 216, 230);
 }
 
+}
+
 @media print {
 
     *,
@@ -204,7 +208,6 @@ button.btn.btn-primary.submit-btn:hover {
         box-shadow: none !important;
         text-shadow: none !important;
         list-style-type: none !important;
-        animation: none !important;
         content: none !important;
     }
 

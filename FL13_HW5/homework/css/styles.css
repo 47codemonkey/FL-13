@@ -1,0 +1,378 @@
+
+body {
+    font-family: roboto;
+}
+
+.post-1 {
+    background: rgb(150, 8, 163)
+}
+
+.post-2 {
+    background: rgb(33, 136, 93);
+}
+
+.post-3 {
+    background: rgb(107, 82, 75);
+}
+
+.post-4 {
+    background: rgb(189, 1, 95);
+}
+
+.post-5 {
+    background: rgb(255, 255, 255);
+}
+
+
+body {
+    max-width: 87.5rem;
+    margin: 0 auto;
+    padding: 0 0.625rem;
+    background-color: rgb(11, 25, 47);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+body,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section_paragraph {
+    line-height: 1.6;
+    color: rgb(197, 197, 197);
+}
+
+.section_heading {
+    font-size: 3em;
+    font-weight: 100;
+    margin-bottom: 1.25rem;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 0.625rem;
+}
+
+.menu {
+    display: flex;
+    height: 6.25rem;
+    margin-bottom: 1.25rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 65, 97);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__button-mobile-tablet {
+    display: none;
+}
+
+.menu__button-mobile-tablet span {
+    display: block;
+    width: 1.875rem;
+    height: 0.125rem;
+    margin: 0.375rem 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu_logo {
+    font-size: 2.5em;
+    font-weight: 100;
+    padding: 0 1.25rem;
+}
+
+.menu_logo span {
+    color: rgb(212, 21, 116);
+}
+
+.menu__nav-item {
+    font-size: 1.125rem;
+    display: inline-flex;
+    height: 6.25rem;
+    padding: 0 1.5625rem;
+    align-items: center;
+}
+
+.menu__nav-item:hover {
+    background-color: rgb(219, 0, 190);
+}
+
+.main_post {
+    position: relative;
+    height: 31.25rem;
+    margin-bottom: 1.25rem;
+    background-image: url('../img/post5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main_post article {
+    position: absolute;
+    bottom: 3.125rem;
+    left: 2.5rem;
+    width: 65%;
+}
+
+main {
+    display: flex;
+}
+
+.main__wrapper {
+    width: 75%;
+}
+
+.main__section-post {
+    display: flex;
+    cursor: pointer;
+}
+
+.main__section-post_img {
+    display: block;
+    max-width: 50%;
+}
+
+.main__section-post_img:hover {
+    opacity: 0.8;
+}
+
+
+.main__section-post_info:hover {
+    opacity: 0.6;
+}
+
+
+.main__section-post_info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 3.125rem;
+    justify-content: center;
+}
+
+
+.date-info {
+    position: absolute;
+    top: 0;
+    padding: 0.9375rem;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.date-info .date-number {
+    font-size: 3em;
+    font-weight: 100;
+    color: rgb(48, 48, 48);
+}
+
+.date-info .date-month {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: rgb(48, 48, 48);
+}
+
+.main__section-post:nth-child(even) .main__section-post_info .date-info {
+    left: 0;
+}
+
+.main__section-post:nth-child(odd) .main__section-post_info .date-info {
+    right: 0;
+}
+
+.main__section-post_info:last-child {
+    width: 100%;
+}
+
+.main__section-post:last-child {
+    height: 12.5rem;
+}
+
+.main__section-post:nth-child(even) .main__section-post_img {
+    order: 2;
+}
+
+.main__section-post:nth-child(even) .main__section-post_info {
+    text-align: right;
+}
+
+aside {
+    width: calc(25% - 1.25rem);
+    margin-left: 1.25rem;
+}
+
+.main-page__aside_img {
+    max-width: 100%;
+}
+
+.main-page__aside {
+    margin-bottom: 1.25rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.main-page__aside_article {
+    padding: 1.875rem;
+}
+
+
+.section-btn {
+    margin-bottom: 0.9375rem;
+}
+
+.aside-button {
+    color: rgb(66, 65, 65);
+    padding: 0.4375rem;
+    cursor: pointer;
+    border: 0.0625rem solid rgb(66, 65, 65);
+    background-color: rgb(255, 255, 255);
+    outline: 0;
+}
+
+.aside-button:hover {
+    text-decoration: underline;
+    border-color: transparent;
+}
+
+
+footer {
+    display: flex;
+    height: 6.25rem;
+    margin-top: 1.25rem;
+    padding: 0 1.25rem;
+    background-color: rgb(2, 65, 97);
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .main_post {
+        height: 21.875rem;
+    }
+
+    .main_post article {
+        bottom: 3.125rem;
+        width: 100%;
+    }
+
+    .section_paragraph {
+        font-size: 0.8em;
+    }
+
+    .section_heading {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    .menu__button-mobile-tablet {
+        display: block;
+        padding: 3.125rem 0;
+        cursor: pointer;
+    }
+
+    .menu_logo {
+        padding-bottom: 3.125rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .main_post article {
+        width: 90%;
+    }
+
+    .main__wrapper {
+        width: 66%;
+    }
+
+    .main__section-post {
+        flex-wrap: wrap;
+    }
+
+    .main__section-post_img {
+        max-width: 100%;
+    }
+
+    .main__section-post:nth-child(even) .main__section-post_img {
+        order: 0;
+    }
+
+    .main__section-post:nth-child(even) .main__section-post_info {
+        text-align: left;
+    }
+
+    .main__section-post:nth-child(even) .main__section-post_info .date-info {
+        right: 0;
+        left: auto;
+    }
+
+    .main__section-post_info {
+        padding: 2.5rem 3.75rem;
+    }
+
+    .main__section-post:last-child {
+        height: auto;
+    }
+
+    aside {
+        width: calc(34% - 1.25rem);
+        margin-left: 1.25rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        opacity: 0.3;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main_post article {
+        bottom: 3.125rem;
+        left: 1.25rem;
+        width: 90%;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    .main__wrapper {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        margin: 0;
+    }
+
+    footer {
+        height: auto;
+        margin-top: 2.5rem;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+}

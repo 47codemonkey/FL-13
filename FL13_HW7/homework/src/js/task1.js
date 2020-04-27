@@ -1,14 +1,14 @@
 'use strict'
 
-const loginValidation = prompt('Input valid login')
+const loginValidation = prompt('Input valid login');
 const LOGINLENGTH = 4;
 const USERLOGIN = 'User';
 const ADMINLOGIN = 'Admin';
 const cancel = null;
 const emptyString = '';
-const currentDateAndHours = new Date().getHours()
+const currentDateAndHours = new Date().getHours();
 const eightAM = 8;
-const eightPM = 20
+const eightPM = 20;
 const passwords = {
     'User': 'UserPass',
     'Admin': 'RootPass'

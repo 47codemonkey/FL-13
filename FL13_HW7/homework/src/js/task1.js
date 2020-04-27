@@ -23,17 +23,16 @@ if (loginValidation === cancel || loginValidation === emptyString) {
     const password = prompt('Input the password')
     if (password === cancel || password === emptyString) {
         alert('Canceled')
-    } else if (password === USERPASSWORD && loginValidation === USERLOGIN || 
+    } else if (password === USERPASSWORD && loginValidation === USERLOGIN ||
         password === ADMINPASSWORD && loginValidation === ADMINLOGIN) {
         if (hours < exactHour && loginValidation === USERLOGIN) {
             alert('Good day, dear User!')
         } else if (hours < exactHour && loginValidation === ADMINLOGIN) {
             alert('Good day, dear Admin!')
-            if (hours >= exactHour && loginValidation === USERLOGIN) {
-                alert('Good evening, dear User!')
-            } else if (hours >= exactHour && loginValidation === ADMINLOGIN) {
-                alert('Good evening, dear User!')
-            }
+        } else if (hours >= exactHour && loginValidation === USERLOGIN) {
+            alert('Good evening, dear User!')
+        } else if (hours >= exactHour && loginValidation === ADMINLOGIN) {
+            alert('Good evening, dear User!')
         }
     } else {
         alert('Wrong password')

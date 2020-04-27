@@ -4,13 +4,15 @@ const loginValidation = prompt('Input valid login')
 const LOGINLENGTH = 4;
 const USERLOGIN = 'User';
 const ADMINLOGIN = 'Admin';
-const USERPASSWORD = 'UserPass'
-const ADMINPASSWORD = 'RootPass'
 const cancel = null;
 const emptyString = '';
-const date = new Date()
-const hours = date.getHours()
-const exactHour = 20;
+const currentDateAndHours = new Date().getHours()
+const eightAM = 8;
+const eightPM = 20
+const passwords = {
+    'User': 'UserPass',
+    'Admin': 'RootPass'
+};
 
 
 if (loginValidation === cancel || loginValidation === emptyString) {
@@ -23,18 +25,11 @@ if (loginValidation === cancel || loginValidation === emptyString) {
     const password = prompt('Input the password')
     if (password === cancel || password === emptyString) {
         alert('Canceled')
-    } else if (password === USERPASSWORD && loginValidation === USERLOGIN ||
-        password === ADMINPASSWORD && loginValidation === ADMINLOGIN) {
-        if (hours < exactHour && loginValidation === USERLOGIN) {
-            alert('Good day, dear User!')
-        } else if (hours < exactHour && loginValidation === ADMINLOGIN) {
-            alert('Good day, dear Admin!')
-        } else if (hours >= exactHour && loginValidation === USERLOGIN) {
-            alert('Good evening, dear User!')
-        } else if (hours >= exactHour && loginValidation === ADMINLOGIN) {
-            alert('Good evening, dear User!')
-        }
-    } else {
+    } else if (password !== passwords[loginValidation]) {
         alert('Wrong password')
+    } else {
+        currentDateAndHours < eightPM && currentDateAndHours >= eightAM ? alert('Good day, dear ' + loginValidation) :
+            alert('Good evening, dear ' + loginValidation);
     }
+
 }

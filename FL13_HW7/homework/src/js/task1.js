@@ -14,7 +14,6 @@ const passwords = {
     'Admin': 'RootPass'
 };
 
-
 if (loginValidation === cancel || loginValidation === emptyString) {
     alert('Canceled')
 } else if (loginValidation.length < LOGINLENGTH) {
@@ -28,8 +27,7 @@ if (loginValidation === cancel || loginValidation === emptyString) {
     } else if (password !== passwords[loginValidation]) {
         alert('Wrong password')
     } else {
-        currentDateAndHours < eightPM && currentDateAndHours >= eightAM ? alert('Good day, dear ' + loginValidation) :
-            alert('Good evening, dear ' + loginValidation);
+        currentDateAndHours < eightPM && currentDateAndHours >= eightAM ? alert(`Good day, dear ${loginValidation}`) :
+            alert(`Good evening, dear ${loginValidation}`);
     }
-
 }

@@ -1,17 +1,17 @@
 'use strict'
 
 const loginValidation = prompt('Input valid login');
-const LOGINLENGTH = 4;
-const USERLOGIN = 'User';
-const ADMINLOGIN = 'Admin';
+const LOGIN_LENGTH = 4;
+const USER_LOGIN = 'User';
+const ADMIN_LOGIN = 'Admin';
 const cancel = null;
 const emptyString = '';
 
 if (loginValidation === cancel || loginValidation === emptyString) {
     alert('Canceled')
-} else if (loginValidation.length < LOGINLENGTH) {
+} else if (loginValidation.length < LOGIN_LENGTH) {
     alert('I don’t know any users having name length less than 4 symbols')
-} else if (loginValidation !== USERLOGIN && loginValidation !== ADMINLOGIN) {
+} else if (loginValidation !== USER_LOGIN && loginValidation !== ADMIN_LOGIN) {
     alert('I don’t know you')
 } else {
     const password = prompt('Input the password')

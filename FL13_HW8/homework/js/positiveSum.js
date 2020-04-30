@@ -2,10 +2,10 @@
 
 function positiveSum(array) {
 
-    const summ = array.filter(arr => arr > 0).reduce((arr, acc) => arr + acc, 0)
-    return summ
+    const sum = array.filter(number => number > 0).reduce((number, acc) => number + acc, 0)
+    return sum
     // or
-    // return array.filter(arr => arr > 0).reduce((arr, acc) => arr + acc, 0)
+    // return array.filter(number => number > 0).reduce((number, acc) => number + acc, 0)
 }
 
 positiveSum([2, 4, 6, 8])

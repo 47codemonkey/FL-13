@@ -1,22 +1,29 @@
-const books = [
-    {
-        'id': '01',
-        'title': 'title 01',
-        'author': 'author 01',
-        'img': 'img 01',
-        'description': 'description 01'
-    },
-    {
-        'id': '02',
-        'title': 'title 02',
-        'author': 'author 02',
-        'img': 'img 02',
-        'description': 'description 02'},
-    {
-        'id': '03',
-        'title': 'title 03',
-        'author': 'author 03',
-        'img': 'img 03',
-        'description': 'description 03'}
-    ];
-    
+(function () {
+    const bookStrKey = 'books';
+    if (!localStorage.getItem(bookStrKey)) {
+      const books = [
+        {
+          id: '1',
+          name: 'The little book of common sense of investing',
+          author: 'John C.Bogle',
+          url: 'https://images-na.ssl-images-amazon.com/images/I/51cCQzs8EBL._SX352_BO1,204,203,200_.jpg',
+          plot: 'Investments'
+        },
+        {
+          id: '2',
+          name: 'One Up On Wall Street: How To Use What You Already Know To Make Money In The Market',
+          author: 'Peter Lynch',
+          url: 'https://images-na.ssl-images-amazon.com/images/I/51rHrFJEFxL._SX301_BO1,204,203,200_.jpg',
+          plot: 'Wall Street'
+        },
+        {
+          id: '3',
+          name: 'The 21st-Century Card Counter: The Pros’ Approach to Beating Blackjack',
+          author: 'Colin Jones',
+          url: 'https://m.media-amazon.com/images/I/51CNN0gJKkL.jpg',
+          plot: 'Black Jack'
+        }
+      ];
+      localStorage.setItem(bookStrKey, JSON.stringify(books));
+    }
+  })()
